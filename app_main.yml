@@ -1,0 +1,9 @@
+- name: Копіювання проекту
+  copy:
+    src: .
+    dest: /home/user/project
+
+- name: Запуск docker-compose
+  command: docker-compose up -d
+  args:
+    chdir: /home/user/project

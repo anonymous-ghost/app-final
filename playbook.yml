@@ -1,0 +1,5 @@
+- name: Розгортання проекту
+  hosts: local
+  tasks:
+    - include_tasks: docker_main.yml
+    - include_tasks: app_main.yml
